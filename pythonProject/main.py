@@ -1,6 +1,6 @@
 class Film:
     def __init__(self):
-        self._tytul = ''
+        self._tytul = 'Żaden!!!'
         self._lista_wypozyczen = 0
 
     def set_tytul(self, tytul):
@@ -26,12 +26,12 @@ film.set_tytul("Fight Club")
 print("tytul po zmianie:", film.get_tytul())
 
 tytul = film.get_tytul()
-print("tytuł filmu", tytul)
+print("tytuł filmu: ", tytul)
 
 liczba_wypozyczen_przed = film.get_lista_wypozyczen()
-print("przed inkrementacja", liczba_wypozyczen_przed)
+print("przed inkrementacja: ", liczba_wypozyczen_przed)
 
 film.increment_lista_wypozyczen()
 
 liczba_wypozyczen_po = film.get_lista_wypozyczen()
-print("po inkrementacji", liczba_wypozyczen_po)
+print("po inkrementacji: ", liczba_wypozyczen_po)
